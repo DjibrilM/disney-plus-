@@ -1,0 +1,201 @@
+.Header
+{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(9, 11, 19, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    z-index: 3;
+    letter-spacing: 16px;
+}
+
+.Header i
+{
+color: white;
+font-size: 20px;
+}
+
+.Logo
+{
+    width: 80px;
+    max-height: 70px;
+    display: inline-block;
+}
+.Logo img
+{
+    width: 80px;
+}
+
+.NavMenu
+{
+ display: flex;
+ flex-grow: row nowrap;
+ align-items: center;
+ justify-content: flex-start;
+ margin: 0px;
+ padding-top: 10px;
+ position:  relative;
+ margin-right: auto;
+ margin-left: 25px;
+}
+
+.NavMenu  a
+{
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    letter-spacing: 10px;
+}
+.NavMenu a span::before
+{
+    content: '';
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: -15px;
+    opacity: 1;
+    transform-origin: center;
+    transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94)0s;
+    transform: scaleX(0);
+    visibility: hidden;
+}
+.NavMenu a span:hover::before 
+{
+opacity: 1;
+visibility: visible !important;
+transform: scaleX(1);
+}
+.NavMenu a  span
+{
+color: rgba(249,249,249);
+font-size: 13px;
+letter-spacing: 1.45px;
+line-height: 1.08px;
+padding: 2px  0px;
+white-space: nowrap;
+position: relative;
+}
+
+
+
+@media(max-width:765px) {
+.NavMenu
+{
+  display: none;
+}
+}
+.LoginBtn
+{
+text-transform: uppercase;
+background-color: rgba(0,0,0, 0.6);
+padding: 8px 16px;
+letter-spacing: 1.5px;
+border: 2px solid #eae8e8;
+border-radius: 4px;
+transition: 0.2s ease-in-out;
+color: #eae8e8;
+cursor: pointer;
+}
+.LoginBtn:hover
+{
+background-color: #eae8e8; 
+color: #333;
+}
+.profileImage
+{
+    border-radius: 50%;
+    max-width:100%
+   
+}
+
+/* //logout drop down  */
+.logout
+{
+    position: relative;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.logout:hover .dropDown
+{
+    opacity: 1;
+}
+
+
+
+
+.dropDown
+{
+transition: 1s;
+position: absolute;
+top: 60px;
+right: 10px;
+border:1px solid rgba(151,151,151, 0.34) ;
+background-color: rgba(19,19,19);
+padding: 10px;
+cursor: pointer;
+letter-spacing: 1.5px;
+border-radius: 10px;
+opacity: 0;
+width: 100px;
+}
+
+
+
+.BottomMenue
+{
+width: 100%;
+height: 80px;
+border-top: 0.4px solid rgb(128, 128, 128, 0.3);
+position: fixed;
+bottom: 0px;
+z-index: 1000;
+background-color: black;
+display: flex;
+justify-content: center;
+box-sizing: border-box;
+padding-top: 10px;
+}
+.BottomMenue a
+{
+ display: flex;
+ flex-direction: column;
+ margin: 10px;
+ text-align: center;
+ height: 100px;
+}
+
+.BottomMenue a span
+{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.BottomMenue a i
+{
+ font-weight: bold;
+ font-size: 16px;
+}
+@media (min-width:765px){
+  .BottomMenue{
+    display: none;
+  }
+}
+
+@media (min-width:442px){
+    .BottomMenue a{
+        margin: 10px;
+    }
+  }

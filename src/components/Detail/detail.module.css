@@ -1,0 +1,207 @@
+.detail
+{
+width: 100%;
+height: calc(100vh - 70px);
+position: relative;
+top: 70px;
+overflow: hidden;
+display: block;
+}
+.background
+{
+position: fixed;
+opacity: 0.8;
+width: 100%;
+height: 100vh;
+z-index: -1;
+}
+.background img
+{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.imgTitle
+{
+width: 100%;
+height: 250px;
+display: flex;
+align-items: flex-end;
+padding-left: 50px;
+margin-top: 100px;
+}
+.imgTitle  img
+{
+max-width: 600px;
+min-width: 200px;
+width: 35vw;
+}
+.contentsMeta
+{
+max-width: 874px;
+}
+.controls
+{
+display: flex;
+align-items: center;
+flex-wrap: nowrap;
+margin:24px 40px ;
+min-height: 56px;
+}
+.controls .player
+{
+padding: 0px 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin-left:  5px;
+border: none;
+transition: 0.5s;
+}
+.controls .player:hover
+{
+background-color: rgb(255, 255, 255, 0.7);
+}
+.controls :nth-child(1)
+{
+border-radius: 10px;
+}
+.controls :nth-child(1) i
+{
+ font-size: 50px;
+ margin: 0px 10px;
+}
+.controls :nth-child(1) span
+{
+ font-size: 20px;
+ text-transform: uppercase;
+ position: relative;
+ right: 20px;
+}
+
+/* /// */
+.playerTrailer
+{
+    padding: 4px 20px;
+    background-color: rgb(0, 0, 0, 0.6);
+    border:2px solid rgb(236, 234, 234, 0.7) ;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left:  5px;
+}
+
+.playerTrailer i
+{
+ font-size: 40px;
+}
+.playerTrailer span
+{
+font-size: 20px;
+font-weight: 100;
+position: relative;
+right: 10px;
+}
+/* // */
+.mediaPlus
+{
+font-size: 20px;
+background-color: rgb(0, 0, 0, 0.6);
+border:2px solid rgb(236, 234, 234, 0.7) ;
+font-weight: 100;
+padding: 13px 15px;
+border-radius: 50%;
+color: white;
+margin-left:  5px;
+cursor: pointer;
+}
+
+/* media */
+@media (max-width:769px){
+    .imgTitle
+   {
+    width: 100%;
+    height: 150px;
+   }
+
+   .controls
+   {
+   margin:24px 10px ;
+  
+   } 
+    .controls .player{
+        padding: 4px 05px;
+        border-radius: 5px;
+        gap: 10px;
+
+    }
+    .controls .player i{
+        font-size: 30px;
+    }
+    .controls .player span{
+        font-size: 12px;
+    }
+
+
+    .playerTrailer
+   {
+    padding: 5px 05px;
+    gap: 10px;
+    }
+    .playerTrailer i
+    {
+     font-size: 25px;
+    }
+    .playerTrailer span
+    {
+    font-size: 12px;
+    }
+
+    .mediaPlus
+    {
+        font-size: 10px;
+        background-color: rgb(0, 0, 0, 0.6);
+        border:2px solid rgb(236, 234, 234, 0.7) ;
+        font-weight: 100;
+        padding: 13px 15px;
+        border-radius: 50%;
+        color: white;
+        margin-left:  5px;
+        cursor: pointer;
+    }
+}
+.subTitles,
+.description
+{
+ margin-left: 50px;
+ color: rgb(249,249,249);
+}
+.subTitles
+{
+min-height: 20px;
+font-size: 15px;
+}
+.description
+{
+padding:16px 0px;
+font-size: 20px;
+}
+
+@media (max-width:769px){
+    .subTitles,
+    .description
+    {
+     margin-left: 20px;
+    }
+    
+    .description
+    {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,10 @@
+.slick-list {
+overflow: initial;
+width: 90%;
+margin: auto;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white;
+}
