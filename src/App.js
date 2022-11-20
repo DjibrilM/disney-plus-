@@ -15,7 +15,6 @@ function App(props) {
 
 const navigate = useNavigate()
 
-
 useEffect(()=>{
   const userData = localStorage.getItem('is-auth');
   const parseData = JSON.parse(userData);
